@@ -105,7 +105,7 @@ ws.connect().then(function(response) {
 				$(".witness:not(.highlighted)").css("color", "").css("font-weight", "");
 				$("._witnessed").css("opacity", "0.3");
 				$("[id='witness_" + witness + "']").find(".blocknum").html(block_number);
-				$("[id='witness_" + witness + "']").addClass("_witnessed").css("color", "green").css("font-weight", "bold");
+				$("[id='witness_" + witness + "']").addClass("_witnessed").css("color", "yellow").css("font-weight", "bold");
 				
 				if(next_shuffle_block_num != 0) {
 					var diff = next_shuffle_block_num - block_number;
@@ -312,7 +312,7 @@ $(function() {
 </head>
 <body>
 
-<img src='whaleshares.jpg' style='position: fixed; top: 0px; z-index: -1' />
+<a href="www.smoke.io"><img src='smoke.jpg' style='position: fixed; top: 0px; border=0; z-index: -1' /></a>
 
 <br>
 
@@ -391,13 +391,13 @@ button {margin:1em; font-weight:bold; color:#17365D;}
 
 <h1><center>Smoke.io Witness Schedule</center></h1>
 
-<span style="display:inline-block; border:1px dotted #4F81BD; min-width:24em; background: lightgrey; padding:1em; margin:1em; vertical-align:top">
-<span style="font-size:medium; font-weight:bold; color:#4F81BD">Witness Schedule</span>
+<span style="display:inline-block; border:1px dotted #008000; min-width:24em; background: lightgrey; padding:1em; margin:1em; vertical-align:top">
+<span style="font-size:medium; font-weight:bold; color:#008000">Witness Schedule</span>
 <div id="consoleschedule" style="margin:0.7em 0;">...</div>
 </span>
 
-<span style="display:inline-block; border:1px dotted #4F81BD; min-width:32em; background: lightgrey; padding:1em; margin:1em; vertical-align:top; position:relative;">
-<span style="font-size:medium; font-weight:bold; color:#4F81BD">Backup Witnesses</span><div style="position:absolute; top:0.2em; left:0.5em; text-align:left; line-height:1.1em;"><!-- <a href="/whale/?c=show200" style="color:black; font-size:0.8em; font-style:italic;">Show top 200</a><br><a href="/whale/?c=includetop20" style="color:black; font-size:0.8em; font-style:italic;">Include top 20</a></div><div style="position:absolute; top:0.2em; right:0.5em;"><a href="/whale/?c=showabstime" style="color:black; font-size:0.8em; font-style:italic;">Show absolute time</a>--></div><div id="consolewitnesses" style="margin:0.7em 0;">...</div>
+<span style="display:inline-block; border:1px dotted ##008000; min-width:32em; background: lightgrey; padding:1em; margin:1em; vertical-align:top; position:relative;">
+<span style="font-size:medium; font-weight:bold; color:#008000">Backup Witnesses</span><div style="position:absolute; top:0.2em; left:0.5em; text-align:left; line-height:1.1em;"><!-- <a href="/whale/?c=show200" style="color:black; font-size:0.8em; font-style:italic;">Show top 200</a><br><a href="/whale/?c=includetop20" style="color:black; font-size:0.8em; font-style:italic;">Include top 20</a></div><div style="position:absolute; top:0.2em; right:0.5em;"><a href="/whale/?c=showabstime" style="color:black; font-size:0.8em; font-style:italic;">Show absolute time</a>--></div><div id="consolewitnesses" style="margin:0.7em 0;">...</div>
 </span>
 
 
@@ -405,4 +405,22 @@ button {margin:1em; font-weight:bold; color:#17365D;}
 </center>
 
 </body>
+
+<head>
+ <style type ="text/css" >
+   .footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom: 0; 
+       width: 100%;
+       font: 4; 
+       color: green;
+   }  
+</style>
+</head>
+<body>
+   <h1>Witness Voting List <a href="https://smoke.io/~witnesses" title="You can vote for up to 30 Witnesses">Here</a><h1><h3>Built by <a href="https://smoke.io/witness/@toker/introducing-toker-a-community-witness-and-cannabis-advocate"> toker </a> with love</h3>
+</body>
 </html>
+
+
